@@ -53,4 +53,4 @@ If you develop a fever, cough, and have difficulty breathing, promptly seek medi
 
 ## Statistics
 
-// we add viz here
+// we add viz here;
