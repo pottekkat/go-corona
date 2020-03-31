@@ -9,7 +9,15 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <style>
+  #load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("loading.gif") no-repeat center center rgba(0,0,0,0.25)
+}
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -28,9 +36,10 @@
     color: #303030;
     font-weight: 400;
     margin-bottom: 30px;
-  }  
+  }
+  
   .jumbotron {
-    background-color: #f4511e;
+    background-color: #4e79ed;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -42,11 +51,11 @@
     background-color: #f6f6f6;
   }
   .logo-small {
-    color: #f4511e;
+    color: #4e79ed;
     font-size: 50px;
   }
   .logo {
-    color: #f4511e;
+    color: #4e79ed;
     font-size: 200px;
   }
   .thumbnail {
@@ -61,13 +70,13 @@
   }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #f4511e;
+    color: #4e79ed;
   }
   .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: #4e79ed;
   }
   .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: #4e79ed;
   }
   .item h4 {
     font-size: 19px;
@@ -90,11 +99,11 @@
   .panel-footer .btn:hover {
     border: 1px solid #f4511e;
     background-color: #fff !important;
-    color: #f4511e;
+    color: #4e79ed;
   }
   .panel-heading {
     color: #fff !important;
-    background-color: #f4511e !important;
+    background-color: #4e79ed !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -114,7 +123,7 @@
   }
   .panel-footer .btn {
     margin: 15px 0;
-    background-color: #f4511e;
+    background-color: #4e79ed;
     color: #fff;
   }
   .navbar {
@@ -142,7 +151,7 @@
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #f4511e;
+    color: #4e79ed;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -190,9 +199,10 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+ <div id="load"></div>
+  <div id="contents">
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -203,30 +213,105 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#state">STATE WISE</a></li>
-        <li><a href="#covid">COVID-19</a></li>
+        <li><a href="#stats">STATISTICS</a></li>
+        <li><a href="#over">OVERVIEW</a></li>
+        <li><a href="#sympt">SYMPTOMS</a></li>
+        <li><a href="#preve">PREVENTION</a></li>
+        <li><a href="#treat">TREATMENTS</a></li>
+
       </ul>
     </div>
   </div>
 </nav>
-<div id="state" class="container-fluid">
-  <div class='tableauPlaceholder' id='viz1585594423356' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19INDIA_15855526058230&#47;COVID19MAPASON30thMARCH1030AM&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;COVID19INDIA_15855526058230&#47;COVID19MAPASON30thMARCH1030AM?:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19INDIA_15855526058230&#47;COVID19MAPASON30thMARCH1030AM&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div> <script type='text/javascript'> var divElement = document.getElementById('viz1585594423356'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+
+<div id="stats" class="container-fluid">
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+    <div>
+	<div class='tableauPlaceholder' id='viz1585676912276' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19Kerala&#47;COVID19-Keralaasof30thMarch&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='COVID19Kerala&#47;COVID19-Keralaasof30thMarch' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19Kerala&#47;COVID19-Keralaasof30thMarch&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1585676912276');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+ <!----------------------------------------------------------->   
+    <div>
+	<div class='tableauPlaceholder' id='viz1585676968011' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19India_15856627054360&#47;COVID19-ActiveCasesIndiaasof30thMarch930PM&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='COVID19India_15856627054360&#47;COVID19-ActiveCasesIndiaasof30thMarch930PM' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19India_15856627054360&#47;COVID19-ActiveCasesIndiaasof30thMarch930PM&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1585676968011');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+<!----------------------------------------------------------->
+    
+    <div>
+<div class='tableauPlaceholder' id='viz1585676997047' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19World&#47;COVID19-World30thMarch&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='COVID19World&#47;COVID19-World30thMarch' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19World&#47;COVID19-World30thMarch&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1585676997047');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+
 </div>
 
-<div id="covid" class="container-fluid">
-  <div class="container-fluid bg-grey" >
-   <h4>&nbsp&nbsp&nbsp Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+<div id="over" class="container-fluid">
+<div class="container-fluid bg-grey" >
+<h2>Over view</h2>
+<p>Coronavirus disease (COVID-19) is an infectious disease caused by a new virus. The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</p>
+<h4>How it spreads</h4>
 
-Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
-
-The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. 
-
-The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
-
-At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. </h4>
-  </ div>
+<p>Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth.</p>
 </div>
+
+
+
+<div id="sympt" class="container-fluid">
+<h2>Symptoms</h2>
+
+<p>People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of coronavirus disease (COVID-19) are fever, tiredness, and dry cough. Most people (about 80%) recover from the disease without needing special treatment. More rarely, the disease can be serious and even fatal. Older people, and people with other medical conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming severely ill. People may experience: cough fever tiredness difficulty breathing (severe cases)</p>
+</div>
+
+
+
+<div id="preve" class="container-fluid">
+<div class="container-fluid bg-grey" >
+<h2>Prevention</h2>
+<h4>Do the FIVE</h4>
+<ul>
+ <li>   HANDS Wash them often</li>
+ <li>   ELBOW Cough into it</li>
+ <li>   FACE Don't touch it</li>
+ <li>   SPACE Keep safe distance</li>
+ <li>   HOME Stay if you can</li>
+</ul>
+
+There’s currently no vaccine to prevent coronavirus disease (COVID-19). You can protect yourself and help prevent spreading the virus to others if you: Do
+<ul>
+    <li>Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub</li>
+    <li>Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze</li>
+    <li>Avoid close contact (1 meter or 3 feet) with people who are unwell</li>
+    <li>Stay home and self-isolate from others in the household if you feel unwell Don't</li>
+    <li>Touch your eyes, nose, or mouth if your hands are not clean</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="treat" class="container-fluid">
+<h2>Treatments</h2>
+
+There is no specific medicine to prevent or treat coronavirus disease (COVID-19). People may need supportive care to help them breathe.
+<h4>Self-care</h4>
+
+If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if you:
+<ul>
+    <li>rest and sleep</li>
+    <li>keep warm</li>
+    <li>drink plenty of liquids</li>
+    <li>use a room humidifier or take a hot shower to help ease a sore throat and cough</li>
+</ul>
+<h4>Medical treatments</h4>
+
+<p>If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in advance and tell your health provider of any recent travel or recent contact with travelers.</p>
+</div>
+
+
 <div class="container-fluid text-center">
+ <div class="container-fluid bg-grey" >
   <h2>KEEP YOUR HANDS CLEAN</h2>
   <br>
   <div class="row slideanim">
@@ -258,8 +343,8 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
       <h4 style="color:#303030;">FINGERNAILS</h4>
     </div>
   </div>
+ </div>
 </div>
-
 <div class="container-fluid text-center bg-grey">
   <h2>LET'S FIGHT THIS TOGETHER BY SOCIAL DISTANCING</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
@@ -293,10 +378,24 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  
+<br>
+  Sources : Covid-19 outbreak control and prevention state cell health & family welfare department Govt. of kerala, Ministry of Health and Family Welfare Government Of India, World Health Organisation
 </footer>
-
+</div>
 <script>
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
+
 $(document).ready(function(){
   
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
