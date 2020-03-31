@@ -2,6 +2,10 @@
 
 Useful infographics and information about COVID 19. 
 
+## Website
+
+https://navendu-pottekkat.github.io/go-corona/
+
 ## Contributions
 
 If you would like to share useful info, create a pull request and it will be checked and validated within an hour.
