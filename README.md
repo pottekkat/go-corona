@@ -4,7 +4,7 @@ Useful infographics and information about COVID 19.
 
 ## Website
 
-https://navendu-pottekkat.github.io/go-corona/
+https://bit.ly/go-corona
 
 ## Contributions
 
