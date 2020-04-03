@@ -10,6 +10,9 @@ https://navendu-pottekkat.github.io/go-corona/
 
 If you would like to share useful info, create a pull request and it will be checked and validated within an hour.
 
+Join our slack channel:
+https://join.slack.com/t/go-coronaworkspace/shared_invite/zt-d5ccrxup-66SIZSbxV_F9DY1gt8sUEA
+
 Website developed by Abhiram Melattur(https://github.com/abhirammltr)
 Infographics by Navendu Pottekkat(https://github.com/navendu-pottekkat)
 
