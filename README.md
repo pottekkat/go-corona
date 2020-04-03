@@ -15,7 +15,7 @@ If you would like to share useful info, create a pull request and it will be che
 Join our slack channel:
 https://join.slack.com/t/go-coronaworkspace/shared_invite/zt-d5ccrxup-66SIZSbxV_F9DY1gt8sUEA 
 
-Website developed by Abhiram Melattur(https://github.com/abhirammltr)
+Website developed by Abhiram Melattur(https://github.com/abhirammltr) and Shibin B Shaji(https://github.com/shibinbshaji)
 Infographics by Navendu Pottekkat(https://github.com/navendu-pottekkat)
 
 Data source: Ministry of Health and Family Welfare Government Of India, World Health Organisation
