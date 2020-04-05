@@ -6,9 +6,8 @@ Useful infographics and information about COVID 19.
 
 https://bit.ly/go-corona
 
-<img src="https://github.com/navendu-pottekkat/go-corona/blob/master/assets/Screenshot%20from%202020-04-04%2012-28-10.png" alt="drawing" width="600"/>
+<img src="https://github.com/pranaymodukuru/go-corona/blob/master/assets/Screenshot%20from%202020-04-05%2016-04-10.png" alt="drawing" width="600"/>
 
-![picture](assets/Screenshot from 2020-04-05 16-04-10.png)
 
 ## Contributions
 
