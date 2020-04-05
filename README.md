@@ -1,6 +1,6 @@
 # Go-Corona Project
 
-Useful infographics and information about COVID 19. 
+Useful infographics and information about COVID 19.
 
 ## Website
 
@@ -8,12 +8,14 @@ https://bit.ly/go-corona
 
 <img src="https://github.com/navendu-pottekkat/go-corona/blob/master/assets/Screenshot%20from%202020-04-04%2012-28-10.png" alt="drawing" width="600"/>
 
+![picture](assets/Screenshot from 2020-04-05 16-04-10.png)
+
 ## Contributions
 
 If you would like to share useful info, create a pull request and it will be checked and validated within an hour.
 
 Join our slack channel:
-https://join.slack.com/t/go-coronaworkspace/shared_invite/zt-d5ccrxup-66SIZSbxV_F9DY1gt8sUEA 
+https://join.slack.com/t/go-coronaworkspace/shared_invite/zt-d5ccrxup-66SIZSbxV_F9DY1gt8sUEA
 
 Website developed by Abhiram Melattur(https://github.com/abhirammltr) and Shibin B Shaji(https://github.com/shibinbshaji)
 Infographics by Navendu Pottekkat(https://github.com/navendu-pottekkat)
