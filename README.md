@@ -1,6 +1,6 @@
 # Go-Corona Project
 
-Useful infographics and information about COVID 19. (Last updated 6/4/20 23:00)
+Useful infographics and information about COVID 19. (Last updated 9/4/20 21:00)
 
 ## Website
 
